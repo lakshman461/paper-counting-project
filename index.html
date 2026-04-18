@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Design and Fabrication of Automatic Paper Counting Machine</title>
+
+<style>
+
+html{
+scroll-behavior:smooth;
+}
+
+/* ===== BODY BACKGROUND ANIMATION ===== */
+body{
+margin:0;
+font-family:"Times New Roman", Times, serif;
+background: linear-gradient(-45deg,#0f2027,#203a43,#2c5364,#1e3c72);
+background-size:400% 400%;
+animation: gradientBG 12s ease infinite;
+text-align:center;
+color:white;
+}
+
+/* Background Animation */
+@keyframes gradientBG{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+/* ===== INTRO SCREEN (3 sec) ===== */
+#intro{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100vh;
+background:#0f2027;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+z-index:9999;
+animation: fadeOut 1s ease 3s forwards;
+}
+
+#intro img{
+width:120px;
+margin-bottom:20px;
+animation: zoomIn 2s ease;
+}
+
+#intro h1{
+font-size:28px;
+animation: zoomIn 2s ease;
+}
+
+@keyframes zoomIn{
+from{transform:scale(0.5);opacity:0;}
+to{transform:scale(1);opacity:1;}
+}
+
+@keyframes fadeOut{
+to{opacity:0;visibility:hidden;}
+}
+
+/* ===== HEADER ===== */
+.header{
+padding:40px 20px;
+}
+
+.header img{
+width:130px;
+margin-bottom:10px;
+}
+
+/* College Name */
+.college-main{
+font-size:30px;
+font-weight:bold;
+color:red;
+letter-spacing:2px;
+}
+
+.affiliation{
+font-size:18px;
+color:black;
+margin-top:8px;
+}
+
+/* MAIN TITLE GLOW */
+h1{
+font-size:42px;
+margin:30px 0;
+text-transform:uppercase;
+letter-spacing:3px;
+animation: glowPulse 2s infinite alternate;
+}
+
+@keyframes glowPulse{
+from{
+text-shadow:0 0 10px white,0 0 20px white;
+}
+to{
+text-shadow:0 0 25px white,0 0 40px white;
+}
+}
+
+/* ===== GUIDE SECTION ===== */
+.guide-section{
+margin-top:50px;
+padding:25px;
+background:rgba(255,255,255,0.1);
+border-radius:15px;
+display:inline-block;
+}
+
+.guide-heading{
+font-size:26px;
+font-weight:bold;
+margin-bottom:15px;
+}
+
+.guide-section img{
+width:180px;
+height:220px;
+object-fit:cover;
+border-radius:12px;
+margin-bottom:15px;
+box-shadow:0 0 20px rgba(255,255,255,0.6);
+}
+
+.guide-name{
+font-size:26px;
+font-weight:bold;
+color:brown;
+text-shadow:0 0 15px white;
+}
+
+.guide-designation{
+font-size:18px;
+color:#ffd700;
+}
+
+/* ===== SECTIONS ===== */
+.section{
+margin:70px 0;
+}
+
+/* Buttons */
+.buttons a, .video-controls button{
+text-decoration:none;
+background:#1e90ff;
+color:white;
+padding:12px 25px;
+margin:10px;
+border-radius:8px;
+border:none;
+cursor:pointer;
+font-weight:bold;
+}
+
+.buttons a:hover,
+.video-controls button:hover{
+background:#0066cc;
+}
+
+/* VIDEO */
+video{
+width:70%;
+max-width:700px;
+border-radius:15px;
+box-shadow:0px 8px 20px rgba(0,0,0,0.6);
+}
+
+/* TEAM */
+.team{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:25px;
+padding:20px;
+}
+
+.card{
+background:white;
+color:black;
+width:220px;
+border-radius:15px;
+padding:15px;
+box-shadow:0px 6px 15px rgba(0,0,0,0.4);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:10px;
+}
+
+/* FOOTER */
+.footer{
+margin-top:40px;
+padding:15px;
+background:rgba(0,0,0,0.3);
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ===== INTRO SCREEN ===== -->
+<div id="intro">
+    <img src="clglogo.png">
+    <h1>Automatic Paper Counting Machine</h1>
+</div>
+
+<!-- ===== HEADER ===== -->
+<div class="header">
+
+<img src="clglogo.png">
+
+<div class="college-main">
+SIR C. R. REDDY COLLEGE OF ENGINEERING <br>
+ELURU – 534007, W. G. DIST., A.P.
+</div>
+
+<div class="affiliation">
+Affiliated to JNTUK, Approved by AICTE,<br>
+Accredited by NAAC & NBA 2025-2026
+</div>
+
+<h1>Design and Fabrication of Automatic Paper Counting Machine</h1>
+
+</div>
+
+<!-- ===== GUIDE ===== -->
+<div class="guide-section">
+
+<div class="guide-heading">PROJECT GUIDE</div>
+
+<img src="guide.jpg">
+
+<div class="guide-name">Dr. D Ajay Kumar</div>
+
+<div class="guide-designation">
+Assistant Professor – Department of ECE
+</div>
+
+</div>
+
+<!-- ===== PROJECT ===== -->
+<div class="section">
+
+<h2>Project Overview</h2>
+
+<div class="buttons">
+<a href="projectphoto.jpg" target="_blank">View Project Photo</a>
+<a href="document.pdf" target="_blank">View Documentation</a>
+</div>
+
+<h2>Project Video</h2>
+
+<video controls>
+<source src="projectvideo.mp4" type="video/mp4">
+</video>
+
+</div>
+
+<!-- ===== TEAM ===== -->
+<div class="section">
+
+<h2>Project Team Members</h2>
+
+<div class="team">
+
+<div class="card">
+<img src="member1.jpg">
+<h4>M. Chiranjeevi</h4>
+<p>22B81A04A5</p>
+</div>
+
+<div class="card">
+<img src="member2.jpg">
+<h4>P. Amara Babu</h4>
+<p>23B85A0414</p>
+</div>
+
+<div class="card">
+<img src="member3.jpg">
+<h4>K. Chinni</h4>
+<p>22B81A0494</p>
+</div>
+
+<div class="card">
+<img src="member4.jpg">
+<h4>N. N. T. Gopala Krishna</h4>
+<p>23B85A0412</p>
+</div>
+
+<div class="card">
+<img src="member5.jpg">
+<h4>G. Lakshman</h4>
+<p>23B85A0408</p>
+</div>
+
+</div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<div class="footer">
+© 2026 | Department of Electronics and Communication Engineering
+</div>
+
+</body>
+</html>
